@@ -1,0 +1,3161 @@
+[
+    {
+        "id": "5bea3bb6ba83a1e7",
+        "type": "tab",
+        "label": "Wetter eingang",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b3f7376222e6c93d",
+        "type": "tab",
+        "label": "Fritzbox",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "2f2a8e1268f9881e",
+        "type": "tab",
+        "label": "Weatherunderground",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "2dda8d02fd68cfa8",
+        "type": "tab",
+        "label": "Dashboard",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "073b9af22c0a29e1",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "019389153f45b6fe",
+        "type": "tab",
+        "label": "Wetter",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "6c80913534cb51e2",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "b758527dfdbe7337",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD.MM.YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "078b6db386178267",
+        "type": "ui_group",
+        "name": "Standard",
+        "tab": "6c80913534cb51e2",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "bf5489b7e5506655",
+        "type": "ui_group",
+        "name": "Group 3",
+        "tab": "6c80913534cb51e2",
+        "order": 3,
+        "disp": false,
+        "width": "5",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3d9e45e.bcd50ba",
+        "type": "ui_group",
+        "name": "Radial Gauges",
+        "tab": "e625ce36.34cf3",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "e625ce36.34cf3",
+        "type": "ui_tab",
+        "name": "Widgets",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": true
+    },
+    {
+        "id": "a8a3386fc017596c",
+        "type": "ui_tab",
+        "name": "Wetter",
+        "icon": "wi-wu-sunny",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "b933a63896aa66c8",
+        "type": "ui_group",
+        "name": "Pollfenflug heute",
+        "tab": "a8a3386fc017596c",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "72ab5331974ab0c0",
+        "type": "ui_group",
+        "name": "Wetter",
+        "tab": "a8a3386fc017596c",
+        "order": 2,
+        "disp": true,
+        "width": 8,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b0effb12acac4333",
+        "type": "inject",
+        "z": "5bea3bb6ba83a1e7",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "40",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 180,
+        "wires": [
+            [
+                "e0233b789fff1cf1",
+                "ad12a4b28c3b6102",
+                "30096e3616032d26",
+                "89dcfed4983e8712",
+                "c62884d896e3438f",
+                "33e1219eda7cdb13"
+            ]
+        ]
+    },
+    {
+        "id": "aa19a0e609969178",
+        "type": "change",
+        "z": "5bea3bb6ba83a1e7",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "temp",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 570,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e0233b789fff1cf1",
+        "type": "ioBroker get",
+        "z": "5bea3bb6ba83a1e7",
+        "name": "temp",
+        "topic": "hm-rpc.2.00181BE9A4239C.1.ACTUAL_TEMPERATURE",
+        "attrname": "payload",
+        "payloadType": "value",
+        "errOnInvalidState": "nothing",
+        "x": 310,
+        "y": 140,
+        "wires": [
+            [
+                "aa19a0e609969178"
+            ]
+        ]
+    },
+    {
+        "id": "ad12a4b28c3b6102",
+        "type": "ioBroker get",
+        "z": "5bea3bb6ba83a1e7",
+        "name": "relFeuchte",
+        "topic": "hm-rpc.2.00181BE9A4239C.1.HUMIDITY",
+        "attrname": "payload",
+        "payloadType": "value",
+        "errOnInvalidState": "nothing",
+        "x": 330,
+        "y": 200,
+        "wires": [
+            [
+                "07b7ece6055316ce"
+            ]
+        ]
+    },
+    {
+        "id": "07b7ece6055316ce",
+        "type": "change",
+        "z": "5bea3bb6ba83a1e7",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "relFeuchte",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 590,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e8a8ba1b09108c8e",
+        "type": "comment",
+        "z": "5bea3bb6ba83a1e7",
+        "name": "Daten aus Wetterstation holen",
+        "info": "",
+        "x": 160,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "30096e3616032d26",
+        "type": "ioBroker get",
+        "z": "5bea3bb6ba83a1e7",
+        "name": "lux",
+        "topic": "hm-rpc.2.00181BE9A4239C.1.ILLUMINATION",
+        "attrname": "payload",
+        "payloadType": "value",
+        "errOnInvalidState": "nothing",
+        "x": 310,
+        "y": 260,
+        "wires": [
+            [
+                "9a6fdd06a03fd169"
+            ]
+        ]
+    },
+    {
+        "id": "9a6fdd06a03fd169",
+        "type": "change",
+        "z": "5bea3bb6ba83a1e7",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "lux",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 560,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "89dcfed4983e8712",
+        "type": "ioBroker get",
+        "z": "5bea3bb6ba83a1e7",
+        "name": "wind",
+        "topic": "hm-rpc.2.00181BE9A4239C.1.WIND_SPEED",
+        "attrname": "payload",
+        "payloadType": "value",
+        "errOnInvalidState": "nothing",
+        "x": 310,
+        "y": 320,
+        "wires": [
+            [
+                "53e7aefaac2d897c"
+            ]
+        ]
+    },
+    {
+        "id": "53e7aefaac2d897c",
+        "type": "change",
+        "z": "5bea3bb6ba83a1e7",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "wind",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 570,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c954d2f3f9dc1def",
+        "type": "comment",
+        "z": "5bea3bb6ba83a1e7",
+        "name": "Daten von Wetter Underground",
+        "info": "",
+        "x": 170,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "68b2366c6ca768c5",
+        "type": "inject",
+        "z": "5bea3bb6ba83a1e7",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "240",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 580,
+        "wires": [
+            [
+                "8d59576e02a28ed6",
+                "e183d172a41080b0",
+                "7dd755420d830b3c"
+            ]
+        ]
+    },
+    {
+        "id": "1f0e13c53a151902",
+        "type": "change",
+        "z": "5bea3bb6ba83a1e7",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "luftdruck",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "359f87bde3904e5f",
+        "type": "change",
+        "z": "5bea3bb6ba83a1e7",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "windDir",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c62884d896e3438f",
+        "type": "ioBroker get",
+        "z": "5bea3bb6ba83a1e7",
+        "name": "svHmIPRainCounterToday_2016",
+        "topic": "hm-rega.0.2057",
+        "attrname": "payload",
+        "payloadType": "value",
+        "errOnInvalidState": "nothing",
+        "x": 390,
+        "y": 380,
+        "wires": [
+            [
+                "589eb25f43b89523"
+            ]
+        ]
+    },
+    {
+        "id": "589eb25f43b89523",
+        "type": "change",
+        "z": "5bea3bb6ba83a1e7",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "dailyrain",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 660,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "33e1219eda7cdb13",
+        "type": "ioBroker get",
+        "z": "5bea3bb6ba83a1e7",
+        "name": "regen",
+        "topic": "hm-rpc.2.00181BE9A4239C.1.RAIN_COUNTER",
+        "attrname": "payload",
+        "payloadType": "value",
+        "errOnInvalidState": "nothing",
+        "x": 310,
+        "y": 440,
+        "wires": [
+            [
+                "48a7f30fc2adf562"
+            ]
+        ]
+    },
+    {
+        "id": "48a7f30fc2adf562",
+        "type": "change",
+        "z": "5bea3bb6ba83a1e7",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "regen",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 510,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "62c0fe2edf16a68e",
+        "type": "inject",
+        "z": "5bea3bb6ba83a1e7",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 20,
+        "wires": [
+            [
+                "4e1b5e628bfc2353"
+            ]
+        ]
+    },
+    {
+        "id": "4e1b5e628bfc2353",
+        "type": "ioBroker get",
+        "z": "5bea3bb6ba83a1e7",
+        "name": "regen",
+        "topic": "hm-rpc.2.00181BE9A4239C.1.RAIN_COUNTER",
+        "attrname": "payload",
+        "payloadType": "value",
+        "errOnInvalidState": "nothing",
+        "x": 270,
+        "y": 20,
+        "wires": [
+            [
+                "722c3e0279eb31f1",
+                "4d97e7a5e7e0d8d0"
+            ]
+        ]
+    },
+    {
+        "id": "722c3e0279eb31f1",
+        "type": "change",
+        "z": "5bea3bb6ba83a1e7",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "regenStart",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 490,
+        "y": 20,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4d97e7a5e7e0d8d0",
+        "type": "change",
+        "z": "5bea3bb6ba83a1e7",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "regenMin",
+                "pt": "global",
+                "to": "0",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 480,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ba6b2c72ad3545ce",
+        "type": "change",
+        "z": "5bea3bb6ba83a1e7",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "taupunkt",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8d59576e02a28ed6",
+        "type": "ioBroker get",
+        "z": "5bea3bb6ba83a1e7",
+        "name": "Air pressure (mbar)",
+        "topic": "weatherunderground.0.forecast.current.pressure",
+        "attrname": "payload",
+        "payloadType": "value",
+        "errOnInvalidState": "nothing",
+        "x": 350,
+        "y": 540,
+        "wires": [
+            [
+                "1f0e13c53a151902"
+            ]
+        ]
+    },
+    {
+        "id": "e183d172a41080b0",
+        "type": "ioBroker get",
+        "z": "5bea3bb6ba83a1e7",
+        "name": "Wind direction Degrees",
+        "topic": "weatherunderground.0.forecast.current.windDegrees",
+        "attrname": "payload",
+        "payloadType": "value",
+        "errOnInvalidState": "nothing",
+        "x": 370,
+        "y": 600,
+        "wires": [
+            [
+                "359f87bde3904e5f"
+            ]
+        ]
+    },
+    {
+        "id": "7dd755420d830b3c",
+        "type": "ioBroker get",
+        "z": "5bea3bb6ba83a1e7",
+        "name": "Dewpoint",
+        "topic": "weatherunderground.0.forecast.current.dewPoint",
+        "attrname": "payload",
+        "payloadType": "value",
+        "errOnInvalidState": "nothing",
+        "x": 320,
+        "y": 660,
+        "wires": [
+            [
+                "ba6b2c72ad3545ce"
+            ]
+        ]
+    },
+    {
+        "id": "e2e89d37c1e2a1ec",
+        "type": "ioBroker out",
+        "z": "5bea3bb6ba83a1e7",
+        "name": "Initiate poll",
+        "topic": "upnp.0.WANDevice_-_FRITZ!Box_7590.WANDevice.WANCommonInterfaceConfig.GetAddonInfos.request",
+        "ack": "false",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 350,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "6d83e76abb501308",
+        "type": "inject",
+        "z": "5bea3bb6ba83a1e7",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 760,
+        "wires": [
+            [
+                "e2e89d37c1e2a1ec"
+            ]
+        ]
+    },
+    {
+        "id": "c7d2ddcd236949b1",
+        "type": "inject",
+        "z": "b3f7376222e6c93d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 140,
+        "wires": [
+            [
+                "bab7a34f4abc63bb",
+                "73d9437ebf141e78"
+            ]
+        ]
+    },
+    {
+        "id": "bab7a34f4abc63bb",
+        "type": "ioBroker get",
+        "z": "b3f7376222e6c93d",
+        "name": "NewByteReceiveRate",
+        "topic": "upnp.0.WANDevice_-_FRITZ!Box_7590.WANDevice.WANCommonInterfaceConfig.GetAddonInfos.NewByteReceiveRate",
+        "attrname": "payload",
+        "payloadType": "value",
+        "errOnInvalidState": "nothing",
+        "x": 440,
+        "y": 60,
+        "wires": [
+            [
+                "11b2fda7848aea55"
+            ]
+        ]
+    },
+    {
+        "id": "0a14b8a42a19da54",
+        "type": "ui_chart",
+        "z": "b3f7376222e6c93d",
+        "name": "",
+        "group": "078b6db386178267",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "chart",
+        "chartType": "bar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "1",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 650,
+        "y": 20,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "93e96023d2b823d3",
+        "type": "function",
+        "z": "b3f7376222e6c93d",
+        "name": "function 1",
+        "func": "msg.payload = msg.payload / 1024 ;\nmsg.payload = msg.payload /100;\nmsg.payload = Math.round(msg.payload *100)/100;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 100,
+        "wires": [
+            [
+                "0a14b8a42a19da54"
+            ]
+        ]
+    },
+    {
+        "id": "11b2fda7848aea55",
+        "type": "change",
+        "z": "b3f7376222e6c93d",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Download",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 480,
+        "y": 160,
+        "wires": [
+            [
+                "93e96023d2b823d3"
+            ]
+        ]
+    },
+    {
+        "id": "73d9437ebf141e78",
+        "type": "ioBroker get",
+        "z": "b3f7376222e6c93d",
+        "name": "NewByteSendRate",
+        "topic": "upnp.0.WANDevice_-_FRITZ!Box_7590.WANDevice.WANCommonInterfaceConfig.GetAddonInfos.NewByteSendRate",
+        "attrname": "payload",
+        "payloadType": "value",
+        "errOnInvalidState": "nothing",
+        "x": 330,
+        "y": 220,
+        "wires": [
+            [
+                "a38c59941c99a490"
+            ]
+        ]
+    },
+    {
+        "id": "a38c59941c99a490",
+        "type": "change",
+        "z": "b3f7376222e6c93d",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Upload",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 220,
+        "wires": [
+            [
+                "93e96023d2b823d3"
+            ]
+        ]
+    },
+    {
+        "id": "b9a6b276df859ff6",
+        "type": "comment",
+        "z": "2f2a8e1268f9881e",
+        "name": "Daten an Weather Underground senden",
+        "info": "",
+        "x": 190,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "f6a8a1e397d5afe5",
+        "type": "inject",
+        "z": "2f2a8e1268f9881e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "61",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 200,
+        "wires": [
+            [
+                "2f55f39adf44fb6d"
+            ]
+        ]
+    },
+    {
+        "id": "2f55f39adf44fb6d",
+        "type": "function",
+        "z": "2f2a8e1268f9881e",
+        "name": "erstelle url",
+        "func": "// umrechnung lux *0.0079\nvar feuchte = global.get('relFeuchte');\nvar temp = global.get('temp');\ntemp = (temp * 1.8) + 32;\nvar pressure = global.get('luftdruck');\npressure = pressure / 33.8;\nvar wind = global.get('wind');\nwind = wind / 1.609;\nvar winddir = global.get('windDir');\nvar lux = global.get('lux');\nvar dailyrain = global.get('dailyrain');\nvar regen = global.get('regenMin');\nvar taupunkt = global.get('taupunkt');\ntaupunkt = (taupunkt * 1.8) +32;\nvar url = \"https://weatherstation.wunderground.com/weatherstation/updateweatherstation.php?ID=IMELLE97&PASSWORD=coI6YpNX&dateutc=now\";\nurl += \"&humidity=\" + feuchte;\nurl += \"&tempf=\" + temp;\nurl += \"&windspeedmph=\" + wind;\nurl += \"&winddir=\" + winddir;\nurl += \"&baromin=\" + pressure;\nurl += \"&solarradiation=\" + (lux * 0.0079);\nurl += \"&dailyrainin=\" + dailyrain / 25.4;\nurl += \"&rainin=\" + regen / 25.4;\nurl += \"&dewptf=\" + taupunkt;\nurl += \"&softwaretype=vws%20versionxx&action=updateraw\";\n\nmsg.method = \"GET\";\nmsg.url = url;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 280,
+        "wires": [
+            [
+                "efed6baa48f6f9d7"
+            ]
+        ]
+    },
+    {
+        "id": "efed6baa48f6f9d7",
+        "type": "http request",
+        "z": "2f2a8e1268f9881e",
+        "name": "",
+        "method": "use",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 490,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "14cd3f0d90b5f26e",
+        "type": "inject",
+        "z": "2f2a8e1268f9881e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "240",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 100,
+        "wires": [
+            [
+                "82baae0be8954a5c"
+            ]
+        ]
+    },
+    {
+        "id": "82baae0be8954a5c",
+        "type": "function",
+        "z": "2f2a8e1268f9881e",
+        "name": "Berechne Regen/Min",
+        "func": "var regen = global.get('regen');\nvar regenStart = global.get('regenStart');\nvar regenMin = regen - regenStart;\nglobal.set('regenMin', regenMin);\nglobal.set('regenStart',regen)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "804d7f53ca8c51f6",
+        "type": "inject",
+        "z": "2dda8d02fd68cfa8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 100,
+        "wires": [
+            [
+                "11b2eaad1783a911",
+                "ecc9284db127862c",
+                "1c8a6d785756814f",
+                "38e932e6beeee7c2",
+                "2ef38668a6688668"
+            ]
+        ]
+    },
+    {
+        "id": "d09e75528eb58620",
+        "type": "ui_chart",
+        "z": "2dda8d02fd68cfa8",
+        "name": "",
+        "group": "078b6db386178267",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Wetter",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "24",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 670,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "11b2eaad1783a911",
+        "type": "change",
+        "z": "2dda8d02fd68cfa8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "temp",
+                "tot": "global"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Temperatur",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 330,
+        "y": 100,
+        "wires": [
+            [
+                "d09e75528eb58620"
+            ]
+        ]
+    },
+    {
+        "id": "ecc9284db127862c",
+        "type": "change",
+        "z": "2dda8d02fd68cfa8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "dailyrain",
+                "tot": "global"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Regen",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 330,
+        "y": 160,
+        "wires": [
+            [
+                "d09e75528eb58620"
+            ]
+        ]
+    },
+    {
+        "id": "1c8a6d785756814f",
+        "type": "ioBroker get",
+        "z": "2dda8d02fd68cfa8",
+        "name": "state",
+        "topic": "weatherunderground.0.forecastPeriod.0p.state",
+        "attrname": "payload",
+        "payloadType": "value",
+        "errOnInvalidState": "nothing",
+        "x": 250,
+        "y": 280,
+        "wires": [
+            [
+                "71a8886cc88598c5"
+            ]
+        ]
+    },
+    {
+        "id": "71a8886cc88598c5",
+        "type": "ui_template",
+        "z": "2dda8d02fd68cfa8",
+        "group": "bf5489b7e5506655",
+        "name": "",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "format": "<div ng-bind-html=\"msg.payload\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 680,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6685a40de7a9386f",
+        "type": "ui_text",
+        "z": "2dda8d02fd68cfa8",
+        "group": "bf5489b7e5506655",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 690,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "38e932e6beeee7c2",
+        "type": "ioBroker get",
+        "z": "2dda8d02fd68cfa8",
+        "name": "title",
+        "topic": "weatherunderground.0.forecastPeriod.0p.title",
+        "attrname": "payload",
+        "payloadType": "value",
+        "errOnInvalidState": "nothing",
+        "x": 270,
+        "y": 220,
+        "wires": [
+            [
+                "6685a40de7a9386f"
+            ]
+        ]
+    },
+    {
+        "id": "0260ee46fc342982",
+        "type": "ui_text",
+        "z": "2dda8d02fd68cfa8",
+        "group": "bf5489b7e5506655",
+        "order": 3,
+        "width": 3,
+        "height": 1,
+        "name": "",
+        "label": "Regen Wahrscheinlichkeit",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "x": 610,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "075f45722f6ae9d7",
+        "type": "ui_text",
+        "z": "2dda8d02fd68cfa8",
+        "group": "bf5489b7e5506655",
+        "order": 4,
+        "width": 2,
+        "height": 1,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}%",
+        "layout": "row-right",
+        "className": "",
+        "x": 610,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "2ef38668a6688668",
+        "type": "ioBroker get",
+        "z": "2dda8d02fd68cfa8",
+        "name": "Precipitation chance",
+        "topic": "weatherunderground.0.forecastPeriod.0p.precipitationChance",
+        "attrname": "payload",
+        "payloadType": "value",
+        "errOnInvalidState": "nothing",
+        "x": 340,
+        "y": 520,
+        "wires": [
+            [
+                "075f45722f6ae9d7"
+            ]
+        ]
+    },
+    {
+        "id": "5d7d5ed07abd9467",
+        "type": "ui_button",
+        "z": "2dda8d02fd68cfa8",
+        "name": "",
+        "group": "bf5489b7e5506655",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "button",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 670,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "142dae9.49d4751",
+        "type": "ui_template",
+        "z": "073b9af22c0a29e1",
+        "group": "3d9e45e.bcd50ba",
+        "name": "Dashboard stylesheet",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n/*\nIt is reasnoble to declare the colors as CSS variables\nso they can be easily called by name where needed.\n\nYou can see that in many places the variables are not used. Change it!\n*/\n\n:root {\n  --color-green-primary: rgb(51, 204, 51);\n  --color-green-secondary: rgb(26, 101, 26);\n  --color-red-primary: rgb(255, 0, 0);\n  --color-red-secondary: rgba(153,0,0,1);\n  --color-gray-primary:rgba(40,40,40,1);\n  --color-gray-secondary:rgba(65,65,65,1);\n  --color-text-primary: rgb(230, 226, 209);\n  --color-widget-border: rgb(84, 78, 78);\n}\n\n/*\nAll CSS adjustments are commented out.\nTurn rules on one by one and see the changes.\nDon't use too many elements cos it wil be confusing\nStart with simple elements like text, slider or button\n\nMany of elements like buttons have states, \nthose rules must be found and adjusted also.\n*/\n\n/*\n.masonry-container {\n    position: relative;\n    width: 100%;\n    height:100%;\n    margin: 0 auto;\n    background: rgb(255,0,0);\n    background: linear-gradient(180deg,  var(--color-gray-primary) 0%, var(--color-gray-secondary) 100%);\n}\n*/\n\n/*\n.nr-dashboard-cardcontainer {\n    position: relative;\n    box-shadow: inset 0px 1px 4px 0px #000000bb;\n    border-radius: 15px;\n}\n*/\n\n /*\n.nr-dashboard-theme ui-card-panel {\n    background-color: #33333300;\n    color:var(--color-text-primary);\n    border-radius: 15px;\n    box-shadow: 0 0 8px 0px #00000080;\n}\n*/\n\n/* \nbody.nr-dashboard-theme md-content md-card {\n    background-color: #33333300;\n    color: var(--color-text-primary);\n    text-shadow: 4px 2px 4px #00000045;\n    box-shadow: 0 -1px 5px 1px #00000045;\n    border-radius: 12px;\n    border: 1px solid var(--color-widget-border);\n}\n */\n\n\n/*\n.nr-dashboard-theme ui-card-panel p.nr-dashboard-cardtitle {\n    color: var(--color-text-primary);\n}\n*/\n\n\n\n.md-button {\n    display: inline-block;\n    position: relative;\n    cursor: pointer;\n    min-height: 36px;\n    min-width: 88px;\n    line-height: 36px;\n    vertical-align: middle;\n    align-items: center;\n    text-align: center;\n    border-radius: 12px;\n    box-sizing: border-box;\n    -webkit-user-select: none;\n    -moz-user-select: none;\n    -ms-user-select: none;\n    user-select: none;\n    outline: none;\n    border: 0;\n    padding: 0 6px;\n    margin: 6px 8px;\n    background: transparent;\n    color:var(--color-text-primary);\n    white-space: nowrap;\n    text-transform: uppercase;\n    font-weight: 500;\n    font-size: 14px;\n    font-style: inherit;\n    font-variant: inherit;\n    font-family: inherit;\n    text-decoration: none;\n    overflow: hidden;\n    transition: box-shadow .4s cubic-bezier(.25,.8,.25,1),background-color .4s cubic-bezier(.25,.8,.25,1);\n}\n\n\n\n/*\n.nr-dashboard-theme .nr-dashboard-button .md-button {\n    background-color: #88888800;\n    color:var(--color-text-primary);\n}\n*/\n\n/*\n.nr-dashboard-theme .nr-dashboard-button .md-button:hover {\n    background-color: #88888855;\n}\n*/\n\n\n/*\nmd-slider .md-thumb {\n    z-index: 1;\n    position: absolute;\n    left: -10px;\n    top: 14px;\n    width: 20px;\n    height: 20px;\n    border-radius: 20px;\n    -webkit-transform: scale(.7);\n    transform: scale(.7);\n    transition: all .4s cubic-bezier(.25,.8,.25,1);\n    box-shadow: 0 0 6px #00000070;\n}\n\n*/\n\n/*\nAdvanced stuff - dynamic change of card CSS\n\nClasses here can be used to make colored stripe at the top of card\nUsage is not in here, but they are added to md-card when needed within another template\n\n.carderr {\n    background: rgb(255,0,0);\n    background: linear-gradient(180deg, var(--color-red-primary) 0px, var(--color-red-secondary) 3px, rgba(80,80,80,1) 4px, rgba(45,45,45,1) 100%);\n}\n.cardok {\n    background: rgb(39,255,0);\n    background: linear-gradient(180deg, var(--color-green-primary) 0px, var(--color-green-secondary) 3px, rgba(70,70,70,1) 4px, rgba(40,40,40,1) 100%);\n}\n*/\n\n.nr-dashboard-text {\npadding: 0 12px;\n#font-size: 9px;\n}\n</style>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "global",
+        "className": "",
+        "x": 320,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6f5b96cf6183e52f",
+        "type": "ui_level",
+        "z": "019389153f45b6fe",
+        "group": "b933a63896aa66c8",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Birke",
+        "label": "",
+        "colorHi": "#e60000",
+        "colorWarn": "#ff9900",
+        "colorNormal": "#00b33c",
+        "colorOff": "#595959",
+        "min": 0,
+        "max": "6",
+        "segWarn": "",
+        "segHigh": "",
+        "unit": "",
+        "layout": "sh",
+        "channelA": "",
+        "channelB": "",
+        "decimals": 0,
+        "animations": "soft",
+        "shape": 2,
+        "colorschema": "fixed",
+        "textoptions": "default",
+        "colorText": "#eeeeee",
+        "fontLabel": "",
+        "fontValue": "",
+        "fontSmall": "",
+        "colorFromTheme": true,
+        "textAnimations": false,
+        "hideValue": true,
+        "tickmode": "off",
+        "peakmode": false,
+        "property": "payload",
+        "peaktime": 3000,
+        "x": 1070,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "44b6275092f5891f",
+        "type": "inject",
+        "z": "019389153f45b6fe",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "3600",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 70,
+        "y": 860,
+        "wires": [
+            [
+                "9b624ea514c1247e",
+                "d6ffeda290d41cee",
+                "9ba62024a9e5f252",
+                "f74d37fa48c168cb",
+                "f5a183ac4c2f662e",
+                "f2de580710107dd9",
+                "3de00d5ef852a1f9",
+                "6650ecae82cfcc28",
+                "ed9e89feda4d48a4",
+                "1463f75f13c47213",
+                "2e54d88a2c7b833c",
+                "015cb1a52e45e169",
+                "294631532aad5a37",
+                "90e005dafa7d458a",
+                "9d497b9668dc613a",
+                "b6539dc315c88676"
+            ]
+        ]
+    },
+    {
+        "id": "9b624ea514c1247e",
+        "type": "ioBroker get",
+        "z": "019389153f45b6fe",
+        "name": "Birke value",
+        "topic": "pollenflug.0.region#31.Birke.index_today",
+        "attrname": "payload",
+        "payloadType": "value",
+        "errOnInvalidState": "nothing",
+        "x": 290,
+        "y": 180,
+        "wires": [
+            [
+                "a268d7a9b4db1c65"
+            ]
+        ]
+    },
+    {
+        "id": "d6ffeda290d41cee",
+        "type": "ioBroker get",
+        "z": "019389153f45b6fe",
+        "name": "Birke Label",
+        "topic": "pollenflug.0.region#31.Birke.text_today",
+        "attrname": "payload",
+        "payloadType": "value",
+        "errOnInvalidState": "nothing",
+        "x": 290,
+        "y": 220,
+        "wires": [
+            [
+                "1990b12a49e164fc"
+            ]
+        ]
+    },
+    {
+        "id": "1990b12a49e164fc",
+        "type": "change",
+        "z": "019389153f45b6fe",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "birke_label",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a268d7a9b4db1c65",
+        "type": "change",
+        "z": "019389153f45b6fe",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "birke_value",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5723ab7fba3e8951",
+        "type": "inject",
+        "z": "019389153f45b6fe",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "3600",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 690,
+        "y": 60,
+        "wires": [
+            [
+                "56ea08dd80b2ad4b",
+                "46fd837e738f8f49",
+                "784831766db39fb5",
+                "0d66736e910b9dff",
+                "3d8a596b0ead8f45",
+                "78ed41ec4984d8c7",
+                "09b0ee7096465b12",
+                "12fb60d79057fee5"
+            ]
+        ]
+    },
+    {
+        "id": "56ea08dd80b2ad4b",
+        "type": "change",
+        "z": "019389153f45b6fe",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "birke_value",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "control.label",
+                "pt": "msg",
+                "to": "birke_label",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 890,
+        "y": 60,
+        "wires": [
+            [
+                "6f5b96cf6183e52f"
+            ]
+        ]
+    },
+    {
+        "id": "9ba62024a9e5f252",
+        "type": "ioBroker get",
+        "z": "019389153f45b6fe",
+        "name": "Ambrosia value",
+        "topic": "pollenflug.0.region#31.Ambrosia.index_today",
+        "attrname": "payload",
+        "payloadType": "value",
+        "errOnInvalidState": "nothing",
+        "x": 300,
+        "y": 300,
+        "wires": [
+            [
+                "8ff254a6201e51ec"
+            ]
+        ]
+    },
+    {
+        "id": "f74d37fa48c168cb",
+        "type": "ioBroker get",
+        "z": "019389153f45b6fe",
+        "name": "Ambrosia label",
+        "topic": "pollenflug.0.region#31.Ambrosia.text_today",
+        "attrname": "payload",
+        "payloadType": "value",
+        "errOnInvalidState": "nothing",
+        "x": 300,
+        "y": 340,
+        "wires": [
+            [
+                "a410a772f77b116c"
+            ]
+        ]
+    },
+    {
+        "id": "8ff254a6201e51ec",
+        "type": "change",
+        "z": "019389153f45b6fe",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ambrosia_value",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a410a772f77b116c",
+        "type": "change",
+        "z": "019389153f45b6fe",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ambrosia_label",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 530,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1e22bf6c70d7d5c8",
+        "type": "ui_level",
+        "z": "019389153f45b6fe",
+        "group": "b933a63896aa66c8",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "Ambrosia",
+        "label": "",
+        "colorHi": "#e60000",
+        "colorWarn": "#ff9900",
+        "colorNormal": "#00b33c",
+        "colorOff": "#595959",
+        "min": 0,
+        "max": "6",
+        "segWarn": "",
+        "segHigh": "",
+        "unit": "",
+        "layout": "sh",
+        "channelA": "",
+        "channelB": "",
+        "decimals": 0,
+        "animations": "soft",
+        "shape": 2,
+        "colorschema": "fixed",
+        "textoptions": "default",
+        "colorText": "#eeeeee",
+        "fontLabel": "",
+        "fontValue": "",
+        "fontSmall": "",
+        "colorFromTheme": true,
+        "textAnimations": false,
+        "hideValue": true,
+        "tickmode": "off",
+        "peakmode": false,
+        "property": "payload",
+        "peaktime": 3000,
+        "x": 1080,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "46fd837e738f8f49",
+        "type": "change",
+        "z": "019389153f45b6fe",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "ambrosia_value",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "control.label",
+                "pt": "msg",
+                "to": "ambrosia_label",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 890,
+        "y": 100,
+        "wires": [
+            [
+                "1e22bf6c70d7d5c8"
+            ]
+        ]
+    },
+    {
+        "id": "f5a183ac4c2f662e",
+        "type": "ioBroker get",
+        "z": "019389153f45b6fe",
+        "name": "Beifuß value",
+        "topic": "pollenflug.0.region#31.Beifuss.index_today",
+        "attrname": "payload",
+        "payloadType": "value",
+        "errOnInvalidState": "nothing",
+        "x": 290,
+        "y": 380,
+        "wires": [
+            [
+                "21752891a346f307"
+            ]
+        ]
+    },
+    {
+        "id": "f2de580710107dd9",
+        "type": "ioBroker get",
+        "z": "019389153f45b6fe",
+        "name": "Beifuß label",
+        "topic": "pollenflug.0.region#31.Beifuss.text_today",
+        "attrname": "payload",
+        "payloadType": "value",
+        "errOnInvalidState": "nothing",
+        "x": 290,
+        "y": 420,
+        "wires": [
+            [
+                "46c7a32010ce0586"
+            ]
+        ]
+    },
+    {
+        "id": "21752891a346f307",
+        "type": "change",
+        "z": "019389153f45b6fe",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "beifuss_value",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 530,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "46c7a32010ce0586",
+        "type": "change",
+        "z": "019389153f45b6fe",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "beifuss_label",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 530,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5991fea7cedfeb1d",
+        "type": "ui_level",
+        "z": "019389153f45b6fe",
+        "group": "b933a63896aa66c8",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "Beifuß",
+        "label": "",
+        "colorHi": "#e60000",
+        "colorWarn": "#ff9900",
+        "colorNormal": "#00b33c",
+        "colorOff": "#595959",
+        "min": 0,
+        "max": "6",
+        "segWarn": "",
+        "segHigh": "",
+        "unit": "",
+        "layout": "sh",
+        "channelA": "",
+        "channelB": "",
+        "decimals": 0,
+        "animations": "soft",
+        "shape": 2,
+        "colorschema": "fixed",
+        "textoptions": "default",
+        "colorText": "#eeeeee",
+        "fontLabel": "",
+        "fontValue": "",
+        "fontSmall": "",
+        "colorFromTheme": true,
+        "textAnimations": false,
+        "hideValue": true,
+        "tickmode": "off",
+        "peakmode": false,
+        "property": "payload",
+        "peaktime": 3000,
+        "x": 1070,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "784831766db39fb5",
+        "type": "change",
+        "z": "019389153f45b6fe",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "beifuss_value",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "control.label",
+                "pt": "msg",
+                "to": "beifuss_label",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 890,
+        "y": 140,
+        "wires": [
+            [
+                "5991fea7cedfeb1d"
+            ]
+        ]
+    },
+    {
+        "id": "3de00d5ef852a1f9",
+        "type": "ioBroker get",
+        "z": "019389153f45b6fe",
+        "name": "Erle value",
+        "topic": "pollenflug.0.region#31.Erle.index_today",
+        "attrname": "payload",
+        "payloadType": "value",
+        "errOnInvalidState": "nothing",
+        "x": 280,
+        "y": 500,
+        "wires": [
+            [
+                "0a1944ebf83f8dec"
+            ]
+        ]
+    },
+    {
+        "id": "6650ecae82cfcc28",
+        "type": "ioBroker get",
+        "z": "019389153f45b6fe",
+        "name": "Erle label",
+        "topic": "pollenflug.0.region#31.Erle.text_today",
+        "attrname": "payload",
+        "payloadType": "value",
+        "errOnInvalidState": "nothing",
+        "x": 280,
+        "y": 540,
+        "wires": [
+            [
+                "208412b36463f3c0"
+            ]
+        ]
+    },
+    {
+        "id": "0a1944ebf83f8dec",
+        "type": "change",
+        "z": "019389153f45b6fe",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "erle_value",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "208412b36463f3c0",
+        "type": "change",
+        "z": "019389153f45b6fe",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "erle_label",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ed9e89feda4d48a4",
+        "type": "ioBroker get",
+        "z": "019389153f45b6fe",
+        "name": "Esche value",
+        "topic": "pollenflug.0.region#31.Esche.index_today",
+        "attrname": "payload",
+        "payloadType": "value",
+        "errOnInvalidState": "nothing",
+        "x": 290,
+        "y": 600,
+        "wires": [
+            [
+                "96a4c12f7f7fdd38"
+            ]
+        ]
+    },
+    {
+        "id": "1463f75f13c47213",
+        "type": "ioBroker get",
+        "z": "019389153f45b6fe",
+        "name": "Esche label",
+        "topic": "pollenflug.0.region#31.Esche.text_today",
+        "attrname": "payload",
+        "payloadType": "value",
+        "errOnInvalidState": "nothing",
+        "x": 290,
+        "y": 640,
+        "wires": [
+            [
+                "0650e9695a6f61f7"
+            ]
+        ]
+    },
+    {
+        "id": "96a4c12f7f7fdd38",
+        "type": "change",
+        "z": "019389153f45b6fe",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "esche_value",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0650e9695a6f61f7",
+        "type": "change",
+        "z": "019389153f45b6fe",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "esche_label",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2e54d88a2c7b833c",
+        "type": "ioBroker get",
+        "z": "019389153f45b6fe",
+        "name": "Gräser value",
+        "topic": "pollenflug.0.region#31.Graeser.index_today",
+        "attrname": "payload",
+        "payloadType": "value",
+        "errOnInvalidState": "nothing",
+        "x": 290,
+        "y": 700,
+        "wires": [
+            [
+                "39d4683b56cb2951"
+            ]
+        ]
+    },
+    {
+        "id": "015cb1a52e45e169",
+        "type": "ioBroker get",
+        "z": "019389153f45b6fe",
+        "name": "Gräser label",
+        "topic": "pollenflug.0.region#31.Graeser.text_today",
+        "attrname": "payload",
+        "payloadType": "value",
+        "errOnInvalidState": "nothing",
+        "x": 290,
+        "y": 740,
+        "wires": [
+            [
+                "47aef0e669d54524"
+            ]
+        ]
+    },
+    {
+        "id": "39d4683b56cb2951",
+        "type": "change",
+        "z": "019389153f45b6fe",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "graeser_value",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 530,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "47aef0e669d54524",
+        "type": "change",
+        "z": "019389153f45b6fe",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "graeser_label",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 530,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "60cdc831b204b2d4",
+        "type": "ui_level",
+        "z": "019389153f45b6fe",
+        "group": "b933a63896aa66c8",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "Erle",
+        "label": "",
+        "colorHi": "#e60000",
+        "colorWarn": "#ff9900",
+        "colorNormal": "#00b33c",
+        "colorOff": "#595959",
+        "min": 0,
+        "max": "6",
+        "segWarn": "",
+        "segHigh": "",
+        "unit": "",
+        "layout": "sh",
+        "channelA": "",
+        "channelB": "",
+        "decimals": 0,
+        "animations": "soft",
+        "shape": 2,
+        "colorschema": "fixed",
+        "textoptions": "default",
+        "colorText": "#eeeeee",
+        "fontLabel": "",
+        "fontValue": "",
+        "fontSmall": "",
+        "colorFromTheme": true,
+        "textAnimations": false,
+        "hideValue": true,
+        "tickmode": "off",
+        "peakmode": false,
+        "property": "payload",
+        "peaktime": 3000,
+        "x": 1070,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "0d66736e910b9dff",
+        "type": "change",
+        "z": "019389153f45b6fe",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "erle_value",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "control.label",
+                "pt": "msg",
+                "to": "erle_label",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 890,
+        "y": 180,
+        "wires": [
+            [
+                "60cdc831b204b2d4"
+            ]
+        ]
+    },
+    {
+        "id": "4073299b5e47f89d",
+        "type": "ui_level",
+        "z": "019389153f45b6fe",
+        "group": "b933a63896aa66c8",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "Esche",
+        "label": "",
+        "colorHi": "#e60000",
+        "colorWarn": "#ff9900",
+        "colorNormal": "#00b33c",
+        "colorOff": "#595959",
+        "min": 0,
+        "max": "6",
+        "segWarn": "",
+        "segHigh": "",
+        "unit": "",
+        "layout": "sh",
+        "channelA": "",
+        "channelB": "",
+        "decimals": 0,
+        "animations": "soft",
+        "shape": 2,
+        "colorschema": "fixed",
+        "textoptions": "default",
+        "colorText": "#eeeeee",
+        "fontLabel": "",
+        "fontValue": "",
+        "fontSmall": "",
+        "colorFromTheme": true,
+        "textAnimations": false,
+        "hideValue": true,
+        "tickmode": "off",
+        "peakmode": false,
+        "property": "payload",
+        "peaktime": 3000,
+        "x": 1070,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "3d8a596b0ead8f45",
+        "type": "change",
+        "z": "019389153f45b6fe",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "esche_value",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "control.label",
+                "pt": "msg",
+                "to": "esche_label",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 890,
+        "y": 220,
+        "wires": [
+            [
+                "4073299b5e47f89d"
+            ]
+        ]
+    },
+    {
+        "id": "294fdc85daf92cd8",
+        "type": "ui_level",
+        "z": "019389153f45b6fe",
+        "group": "b933a63896aa66c8",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "Gräser",
+        "label": "",
+        "colorHi": "#e60000",
+        "colorWarn": "#ff9900",
+        "colorNormal": "#00b33c",
+        "colorOff": "#595959",
+        "min": 0,
+        "max": "6",
+        "segWarn": "",
+        "segHigh": "",
+        "unit": "",
+        "layout": "sh",
+        "channelA": "",
+        "channelB": "",
+        "decimals": 0,
+        "animations": "soft",
+        "shape": 2,
+        "colorschema": "fixed",
+        "textoptions": "default",
+        "colorText": "#eeeeee",
+        "fontLabel": "",
+        "fontValue": "",
+        "fontSmall": "",
+        "colorFromTheme": true,
+        "textAnimations": false,
+        "hideValue": true,
+        "tickmode": "off",
+        "peakmode": false,
+        "property": "payload",
+        "peaktime": 3000,
+        "x": 1070,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "78ed41ec4984d8c7",
+        "type": "change",
+        "z": "019389153f45b6fe",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "graeser_value",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "control.label",
+                "pt": "msg",
+                "to": "graeser_label",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 890,
+        "y": 260,
+        "wires": [
+            [
+                "294fdc85daf92cd8"
+            ]
+        ]
+    },
+    {
+        "id": "294631532aad5a37",
+        "type": "ioBroker get",
+        "z": "019389153f45b6fe",
+        "name": "Hasel value",
+        "topic": "pollenflug.0.region#31.Hasel.index_today",
+        "attrname": "payload",
+        "payloadType": "value",
+        "errOnInvalidState": "nothing",
+        "x": 290,
+        "y": 820,
+        "wires": [
+            [
+                "e29dddfe4e3b2a98"
+            ]
+        ]
+    },
+    {
+        "id": "90e005dafa7d458a",
+        "type": "ioBroker get",
+        "z": "019389153f45b6fe",
+        "name": "Hasel label",
+        "topic": "pollenflug.0.region#31.Hasel.text_today",
+        "attrname": "payload",
+        "payloadType": "value",
+        "errOnInvalidState": "nothing",
+        "x": 290,
+        "y": 860,
+        "wires": [
+            [
+                "e92165ec10fa6b36"
+            ]
+        ]
+    },
+    {
+        "id": "e29dddfe4e3b2a98",
+        "type": "change",
+        "z": "019389153f45b6fe",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "hasel_value",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e92165ec10fa6b36",
+        "type": "change",
+        "z": "019389153f45b6fe",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "hasel_label",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9d497b9668dc613a",
+        "type": "ioBroker get",
+        "z": "019389153f45b6fe",
+        "name": "Roggen value",
+        "topic": "pollenflug.0.region#31.Roggen.index_today",
+        "attrname": "payload",
+        "payloadType": "value",
+        "errOnInvalidState": "nothing",
+        "x": 300,
+        "y": 920,
+        "wires": [
+            [
+                "46313b2db81000db"
+            ]
+        ]
+    },
+    {
+        "id": "b6539dc315c88676",
+        "type": "ioBroker get",
+        "z": "019389153f45b6fe",
+        "name": "Roggen label",
+        "topic": "pollenflug.0.region#31.Roggen.text_today",
+        "attrname": "payload",
+        "payloadType": "value",
+        "errOnInvalidState": "nothing",
+        "x": 290,
+        "y": 960,
+        "wires": [
+            [
+                "5e34d8234ecae9fc"
+            ]
+        ]
+    },
+    {
+        "id": "46313b2db81000db",
+        "type": "change",
+        "z": "019389153f45b6fe",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "roggen_value",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 530,
+        "y": 920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5e34d8234ecae9fc",
+        "type": "change",
+        "z": "019389153f45b6fe",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "roggen_label",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 530,
+        "y": 960,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "eae735a12ba116b1",
+        "type": "ui_level",
+        "z": "019389153f45b6fe",
+        "group": "b933a63896aa66c8",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "name": "Hasel",
+        "label": "",
+        "colorHi": "#e60000",
+        "colorWarn": "#ff9900",
+        "colorNormal": "#00b33c",
+        "colorOff": "#595959",
+        "min": 0,
+        "max": "6",
+        "segWarn": "",
+        "segHigh": "",
+        "unit": "",
+        "layout": "sh",
+        "channelA": "",
+        "channelB": "",
+        "decimals": 0,
+        "animations": "soft",
+        "shape": 2,
+        "colorschema": "fixed",
+        "textoptions": "default",
+        "colorText": "#eeeeee",
+        "fontLabel": "",
+        "fontValue": "",
+        "fontSmall": "",
+        "colorFromTheme": true,
+        "textAnimations": false,
+        "hideValue": true,
+        "tickmode": "off",
+        "peakmode": false,
+        "property": "payload",
+        "peaktime": 3000,
+        "x": 1070,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "09b0ee7096465b12",
+        "type": "change",
+        "z": "019389153f45b6fe",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "hasel_value",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "control.label",
+                "pt": "msg",
+                "to": "hasel_label",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 890,
+        "y": 300,
+        "wires": [
+            [
+                "eae735a12ba116b1"
+            ]
+        ]
+    },
+    {
+        "id": "796ea22d1044e392",
+        "type": "ui_level",
+        "z": "019389153f45b6fe",
+        "group": "b933a63896aa66c8",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "name": "Roggen",
+        "label": "",
+        "colorHi": "#e60000",
+        "colorWarn": "#ff9900",
+        "colorNormal": "#00b33c",
+        "colorOff": "#595959",
+        "min": 0,
+        "max": "6",
+        "segWarn": "",
+        "segHigh": "",
+        "unit": "",
+        "layout": "sh",
+        "channelA": "",
+        "channelB": "",
+        "decimals": 0,
+        "animations": "soft",
+        "shape": 2,
+        "colorschema": "fixed",
+        "textoptions": "default",
+        "colorText": "#eeeeee",
+        "fontLabel": "",
+        "fontValue": "",
+        "fontSmall": "",
+        "colorFromTheme": true,
+        "textAnimations": false,
+        "hideValue": true,
+        "tickmode": "off",
+        "peakmode": false,
+        "property": "payload",
+        "peaktime": 3000,
+        "x": 1080,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "12fb60d79057fee5",
+        "type": "change",
+        "z": "019389153f45b6fe",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "roggen_value",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "control.label",
+                "pt": "msg",
+                "to": "roggen_label",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 890,
+        "y": 340,
+        "wires": [
+            [
+                "796ea22d1044e392"
+            ]
+        ]
+    },
+    {
+        "id": "561cabfc110baaa1",
+        "type": "comment",
+        "z": "019389153f45b6fe",
+        "name": "Wetter Daten",
+        "info": "",
+        "x": 90,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "2b1ac31badf506aa",
+        "type": "inject",
+        "z": "019389153f45b6fe",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 1160,
+        "wires": [
+            [
+                "85e719b014985655"
+            ]
+        ]
+    },
+    {
+        "id": "85e719b014985655",
+        "type": "ioBroker get",
+        "z": "019389153f45b6fe",
+        "name": "Wetterstation.ACTUAL_TEMPERATURE",
+        "topic": "hm-rpc.2.00181BE9A4239C.1.ACTUAL_TEMPERATURE",
+        "attrname": "payload",
+        "payloadType": "value",
+        "errOnInvalidState": "nothing",
+        "x": 400,
+        "y": 1160,
+        "wires": [
+            [
+                "ac010c3d3d457985"
+            ]
+        ]
+    },
+    {
+        "id": "1b250bba20345b06",
+        "type": "ui_level",
+        "z": "019389153f45b6fe",
+        "group": "72ab5331974ab0c0",
+        "order": 2,
+        "width": 5,
+        "height": 1,
+        "name": "Temperatur",
+        "label": "",
+        "colorHi": "#e60000",
+        "colorWarn": "#ff9900",
+        "colorNormal": "#00b33c",
+        "colorOff": "#595959",
+        "min": "-20",
+        "max": "40",
+        "segWarn": "",
+        "segHigh": "",
+        "unit": "°C",
+        "layout": "sh",
+        "channelA": "",
+        "channelB": "",
+        "decimals": "1",
+        "animations": "soft",
+        "shape": 2,
+        "colorschema": "fixed",
+        "textoptions": "default",
+        "colorText": "#eeeeee",
+        "fontLabel": "",
+        "fontValue": "",
+        "fontSmall": "",
+        "colorFromTheme": true,
+        "textAnimations": false,
+        "hideValue": false,
+        "tickmode": "off",
+        "peakmode": false,
+        "property": "payload",
+        "peaktime": 3000,
+        "x": 970,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "6a9107aea7b3f8f8",
+        "type": "change",
+        "z": "019389153f45b6fe",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "control.label",
+                "pt": "msg",
+                "to": "temp",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 670,
+        "y": 1100,
+        "wires": [
+            [
+                "1b250bba20345b06"
+            ]
+        ]
+    },
+    {
+        "id": "ac010c3d3d457985",
+        "type": "function",
+        "z": "019389153f45b6fe",
+        "name": "function 2",
+        "func": "var tmp = \"Temperatur: \" ;//+ msg.payload;\nflow.set('temp',tmp);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 1240,
+        "wires": [
+            [
+                "6a9107aea7b3f8f8"
+            ]
+        ]
+    },
+    {
+        "id": "10bd0c9233c1a3a6",
+        "type": "ui_text",
+        "z": "019389153f45b6fe",
+        "group": "72ab5331974ab0c0",
+        "order": 1,
+        "width": 3,
+        "height": 1,
+        "name": "",
+        "label": "Temperatur",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "x": 870,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "36ad5c8e0016df88",
+        "type": "ioBroker get",
+        "z": "019389153f45b6fe",
+        "name": "Wetterstation.WIND_SPEED",
+        "topic": "hm-rpc.2.00181BE9A4239C.1.WIND_SPEED",
+        "attrname": "payload",
+        "payloadType": "value",
+        "errOnInvalidState": "nothing",
+        "x": 340,
+        "y": 1300,
+        "wires": [
+            [
+                "173b1737fce2052c"
+            ]
+        ]
+    },
+    {
+        "id": "6020b6230138241d",
+        "type": "ui_text",
+        "z": "019389153f45b6fe",
+        "group": "72ab5331974ab0c0",
+        "order": 3,
+        "width": 3,
+        "height": 1,
+        "name": "",
+        "label": "Wind",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "x": 630,
+        "y": 1320,
+        "wires": []
+    },
+    {
+        "id": "173b1737fce2052c",
+        "type": "ui_level",
+        "z": "019389153f45b6fe",
+        "group": "72ab5331974ab0c0",
+        "order": 4,
+        "width": 5,
+        "height": 1,
+        "name": "Wind",
+        "label": "",
+        "colorHi": "#e60000",
+        "colorWarn": "#ff9900",
+        "colorNormal": "#00b33c",
+        "colorOff": "#595959",
+        "min": "0",
+        "max": "60",
+        "segWarn": "",
+        "segHigh": "",
+        "unit": "km/h",
+        "layout": "sh",
+        "channelA": "",
+        "channelB": "",
+        "decimals": "1",
+        "animations": "soft",
+        "shape": 2,
+        "colorschema": "fixed",
+        "textoptions": "default",
+        "colorText": "#eeeeee",
+        "fontLabel": "",
+        "fontValue": "",
+        "fontSmall": "",
+        "colorFromTheme": true,
+        "textAnimations": false,
+        "hideValue": false,
+        "tickmode": "auto",
+        "peakmode": false,
+        "property": "payload",
+        "peaktime": 3000,
+        "x": 790,
+        "y": 1360,
+        "wires": []
+    },
+    {
+        "id": "11a58f8d4f776872",
+        "type": "inject",
+        "z": "019389153f45b6fe",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 90,
+        "y": 1320,
+        "wires": [
+            [
+                "36ad5c8e0016df88",
+                "eef6670e0a476b53"
+            ]
+        ]
+    },
+    {
+        "id": "eef6670e0a476b53",
+        "type": "ioBroker get",
+        "z": "019389153f45b6fe",
+        "name": "svHmIPRainCounterToday_2016",
+        "topic": "hm-rega.0.2057",
+        "attrname": "payload",
+        "payloadType": "value",
+        "errOnInvalidState": "nothing",
+        "x": 350,
+        "y": 1380,
+        "wires": [
+            [
+                "37a592f2a66f399d"
+            ]
+        ]
+    },
+    {
+        "id": "39d3b93e58de4eb5",
+        "type": "ui_text",
+        "z": "019389153f45b6fe",
+        "group": "72ab5331974ab0c0",
+        "order": 5,
+        "width": 3,
+        "height": 1,
+        "name": "",
+        "label": "Regen heute",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "x": 590,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "37a592f2a66f399d",
+        "type": "ui_level",
+        "z": "019389153f45b6fe",
+        "group": "72ab5331974ab0c0",
+        "order": 6,
+        "width": 5,
+        "height": 1,
+        "name": "Regen heute",
+        "label": "",
+        "colorHi": "#e60000",
+        "colorWarn": "#ff9900",
+        "colorNormal": "#00b33c",
+        "colorOff": "#595959",
+        "min": "0",
+        "max": "20",
+        "segWarn": "",
+        "segHigh": "",
+        "unit": "liter",
+        "layout": "sh",
+        "channelA": "",
+        "channelB": "",
+        "decimals": "1",
+        "animations": "soft",
+        "shape": 2,
+        "colorschema": "fixed",
+        "textoptions": "default",
+        "colorText": "#eeeeee",
+        "fontLabel": "",
+        "fontValue": "",
+        "fontSmall": "",
+        "colorFromTheme": true,
+        "textAnimations": false,
+        "hideValue": false,
+        "tickmode": "auto",
+        "peakmode": false,
+        "property": "payload",
+        "peaktime": 3000,
+        "x": 790,
+        "y": 1440,
+        "wires": []
+    }
+]
